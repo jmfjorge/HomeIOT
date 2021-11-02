@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/04/05 14:57:15.000.228,=C:\Users\desen\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2020/05/20 22:13:24.000.956,=C:\Users\desen\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2020/06/06 17:19:26.000.461,=C:\Users\desen\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2021/04/29 19:43:35.000.101,=C:\Users\desen\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2021/04/29 20:00:40.000.567,=C:\Users\desen\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2021/10/12 21:50:30.000.745,=C:\Users\desen\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2021/10/16 01:24:02.000.134,=C:\Users\desen\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2021/10/16 01:46:02.000.589,C:\Users\desen\Documents\Embarcadero\Studio\Projects\Unit2.fmx=C:\Desenvolvimento\EmbarcaderoConference\IOTHealthMonitor\untMain.fmx</Transaction>
+    <Transaction>2021/10/16 01:46:02.000.589,C:\Users\desen\Documents\Embarcadero\Studio\Projects\Unit2.pas=C:\Desenvolvimento\EmbarcaderoConference\IOTHealthMonitor\untMain.pas</Transaction>
+    <Transaction>2021/10/16 01:46:11.000.393,C:\Users\desen\Documents\Embarcadero\Studio\Projects\Project2.dproj=C:\Desenvolvimento\EmbarcaderoConference\IOTHealthMonitor\IOTHealthMonitor.dproj</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<PMacOsCatalinaVMJorge iOSSimulator="iPhone5"/>  <PmacOS11.3BigSurprofile iOSSimulator="iPhone5"/>
+    <NoProfile Android64="192.168.0.21:5555" Android=""/>
+  </ActiveMobileDevice>
+</BorlandProject>

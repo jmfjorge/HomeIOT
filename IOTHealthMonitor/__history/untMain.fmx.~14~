@@ -1,0 +1,136 @@
+object frmMain: TfrmMain
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object Chart1: TChart
+    Position.X = 10.000000000000000000
+    Position.Y = 10.000000000000000000
+    BackWall.Size = 1
+    BottomWall.Dark3D = False
+    BottomWall.RoundSize = 18
+    BottomWall.Size = 1
+    Foot.Font.StyleExt = {00040000000200000004000000}
+    LeftWall.Dark3D = False
+    LeftWall.Size = 1
+    LeftWall.Visible = False
+    Legend.Title.Font.StyleExt = {00070000000000000004000000}
+    RightWall.Size = 1
+    SubFoot.Font.StyleExt = {00040000000200000004000000}
+    Title.Text.Strings = (
+      'IOT Helth Monitor')
+    BottomAxis.Automatic = False
+    BottomAxis.AutomaticMinimum = False
+    ClipPoints = False
+    LeftAxis.Automatic = False
+    LeftAxis.AutomaticMaximum = False
+    LeftAxis.AutomaticMinimum = False
+    LeftAxis.Maximum = 170.000000000000000000
+    View3D = False
+    Zoom.Brush.Kind = None
+    Zoom.Pen.Fill.Color = claSilver
+    Color = claWhite
+    TabOrder = 0
+    Anchors = [akLeft, akTop, akRight, akBottom]
+    Size.Width = 620.000000000000000000
+    Size.Height = 400.000000000000000000
+    Size.PlatformDefault = False
+    ColorPaletteIndex = 13
+    object Series1: TFastLineSeries
+      Legend.Text = 'SPO2'
+      LegendTitle = 'SPO2'
+      Title = 'Series1'
+      LinePen.Color = xFF4466A3
+      LinePen.Fill.Color = xFF4466A3
+      XValues.Name = 'X'
+      XValues.Order = loNone
+      YValues.Name = 'Y'
+      YValues.Order = loNone
+    end
+    object Series2: TFastLineSeries
+      Legend.Text = 'BPM'
+      LegendTitle = 'BPM'
+      Title = 'Series2'
+      LinePen.Color = xFFF39C35
+      LinePen.Fill.Color = xFFF39C35
+      XValues.Name = 'X'
+      XValues.Order = loNone
+      YValues.Name = 'Y'
+      YValues.Order = loNone
+    end
+  end
+  object lbBPM: TLabel
+    AutoTranslate = False
+    StyledSettings = [Family, FontColor]
+    Position.X = 13.000000000000000000
+    Position.Y = 415.000000000000000000
+    Size.Width = 345.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 22.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    Text = 'BPM: -'
+    TabOrder = 5
+  end
+  object lbSPO2: TLabel
+    AutoTranslate = False
+    StyledSettings = [Family, FontColor]
+    Position.X = 14.000000000000000000
+    Position.Y = 439.000000000000000000
+    Size.Width = 345.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 22.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    Text = 'SPO2: -'
+    TabOrder = 4
+  end
+  object Panel1: TPanel
+    Anchors = [akRight, akBottom]
+    Position.X = 317.000000000000000000
+    Position.Y = 416.000000000000000000
+    Size.Width = 314.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 8
+    object Rectangle1: TRectangle
+      Align = Client
+      Fill.Color = claCrimson
+      Size.Width = 314.000000000000000000
+      Size.Height = 57.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = claBrown
+    end
+    object Label1: TLabel
+      Align = Client
+      StyledSettings = [Family]
+      Size.Width = 314.000000000000000000
+      Size.Height = 57.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 28.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = claWhite
+      TextSettings.HorzAlign = Center
+      Text = 'Aten'#231#227'o'
+      TabOrder = 2
+    end
+  end
+  object NetHTTPClient1: TNetHTTPClient
+    Asynchronous = False
+    ConnectionTimeout = 1000
+    ResponseTimeout = 60000
+    HandleRedirects = True
+    AllowCookies = True
+    UserAgent = 'Embarcadero URI Client/1.0'
+    Left = 535
+    Top = 291
+  end
+end
