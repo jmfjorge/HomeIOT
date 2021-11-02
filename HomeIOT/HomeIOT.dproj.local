@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/04/05 14:57:15.000.228,=C:\Users\desen\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2020/05/20 22:13:24.000.956,=C:\Users\desen\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2020/06/06 17:19:26.000.461,=C:\Users\desen\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2021/04/29 19:43:35.000.101,=C:\Users\desen\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2021/04/29 20:00:40.000.567,=C:\Users\desen\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2021/10/10 18:48:31.000.440,=C:\Users\desen\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2021/10/10 18:50:49.000.496,C:\Users\desen\Documents\Embarcadero\Studio\Projects\Unit2.fmx=C:\Desenvolvimento\EmbarcaderoConference\HomeIOT\untPrincipal.fmx</Transaction>
+    <Transaction>2021/10/10 18:50:49.000.496,C:\Users\desen\Documents\Embarcadero\Studio\Projects\Unit2.pas=C:\Desenvolvimento\EmbarcaderoConference\HomeIOT\untPrincipal.pas</Transaction>
+    <Transaction>2021/10/10 18:50:57.000.923,C:\Users\desen\Documents\Embarcadero\Studio\Projects\Project2.dproj=C:\Desenvolvimento\EmbarcaderoConference\HomeIOT\HomeIOT.dproj</Transaction>
+    <Transaction>2021/10/12 22:19:27.000.160,=C:\Desenvolvimento\JEDI\run\JvInterpreter.pas</Transaction>
+    <Transaction>2021/10/12 22:33:20.000.695,C:\Desenvolvimento\JEDI\run\JvInterpreter.pas=</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<PMacOsCatalinaVMJorge iOSSimulator="iPhone5"/>
+		<NoProfile Android="" Android64=""/>
+	</ActiveMobileDevice>
+</BorlandProject>

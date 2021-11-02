@@ -1,0 +1,161 @@
+object frmPrinicipal: TfrmPrinicipal
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 606
+  ClientWidth = 903
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object pnControls: TPanel
+    Align = Left
+    Size.Width = 249.000000000000000000
+    Size.Height = 606.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object SwitchAutoMode: TSwitch
+      Anchors = [akLeft, akBottom]
+      IsChecked = False
+      Opacity = 0.699999988079071100
+      Position.X = 11.000000000000000000
+      Position.Y = 568.000000000000000000
+      TabOrder = 12
+    end
+    object LabelSwitchAutoMode: TLabel
+      Anchors = [akLeft, akBottom]
+      StyledSettings = []
+      Position.X = 100.000000000000000000
+      Position.Y = 573.000000000000000000
+      Text = 'AutoMode'
+      TabOrder = 13
+    end
+  end
+  object ImageStream: TImage
+    MultiResBitmap = <
+      item
+      end>
+    Position.X = 259.000000000000000000
+    Position.Y = 3.000000000000000000
+    Size.Width = 640.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object lbTemperature: TLabel
+    AutoTranslate = False
+    StyledSettings = [Family, FontColor]
+    Position.X = 253.000000000000000000
+    Position.Y = 477.000000000000000000
+    Size.Width = 345.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 22.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    Text = 'Temperatura: -'
+    TabOrder = 5
+  end
+  object TimerAutomation: TTimer
+    Enabled = False
+    OnTimer = TimerAutomationTimer
+    Left = 640
+    Top = 160
+  end
+  object Button1: TButton
+    Position.X = 280.000000000000000000
+    Position.Y = 528.000000000000000000
+    TabOrder = 13
+    Text = 'Button1'
+  end
+  object RESTClient1: TRESTClient
+    Accept = 'application/json, text/plain; q=0.9, text/html;q=0.8,'
+    AcceptCharset = 'utf-8, *;q=0.8'
+    BaseURL = 'http://192.168.15.139:8081/zeroconf/switch'
+    Params = <>
+    RaiseExceptionOn500 = False
+    Left = 528
+    Top = 24
+  end
+  object RESTRequest1: TRESTRequest
+    Client = RESTClient1
+    Method = rmPOST
+    Params = <
+      item
+        Kind = pkREQUESTBODY
+        Name = 'body'
+        Options = [poDoNotEncode]
+        ContentType = ctAPPLICATION_JSON
+      end>
+    Response = RESTResponse1
+    SynchronizedEvents = False
+    Left = 528
+    Top = 96
+  end
+  object RESTResponse1: TRESTResponse
+    Left = 528
+    Top = 160
+  end
+  object NetHTTPClient1: TNetHTTPClient
+    Asynchronous = False
+    ConnectionTimeout = 60000
+    ResponseTimeout = 60000
+    HandleRedirects = True
+    AllowCookies = True
+    UserAgent = 'Embarcadero URI Client/1.0'
+    Left = 631
+    Top = 235
+  end
+  object NetHTTPClient2: TNetHTTPClient
+    Asynchronous = False
+    ConnectionTimeout = 60000
+    ResponseTimeout = 60000
+    HandleRedirects = True
+    AllowCookies = True
+    UserAgent = 'Embarcadero URI Client/1.0'
+    Left = 624
+    Top = 299
+  end
+  object NetHTTPClient3: TNetHTTPClient
+    Asynchronous = False
+    ConnectionTimeout = 60000
+    ResponseTimeout = 60000
+    HandleRedirects = True
+    AllowCookies = True
+    UserAgent = 'Embarcadero URI Client/1.0'
+    Left = 624
+    Top = 355
+  end
+  object RESTClient2: TRESTClient
+    Accept = 'application/json, text/plain; q=0.9, text/html;q=0.8,'
+    AcceptCharset = 'utf-8, *;q=0.8'
+    BaseURL = 'http://192.168.15.204:8081/zeroconf/info'
+    ContentType = 'application/json'
+    Params = <>
+    RaiseExceptionOn500 = False
+    Left = 808
+    Top = 112
+  end
+  object RESTRequest2: TRESTRequest
+    Client = RESTClient2
+    Method = rmPOST
+    Params = <
+      item
+        Kind = pkREQUESTBODY
+        Name = 'body'
+        Options = [poDoNotEncode]
+        ContentType = ctAPPLICATION_JSON
+      end>
+    Response = RESTResponse2
+    OnAfterExecute = RESTRequest2AfterExecute
+    SynchronizedEvents = False
+    Left = 808
+    Top = 56
+  end
+  object RESTResponse2: TRESTResponse
+    ContentType = 'application/json'
+    Left = 808
+    Top = 168
+  end
+end
